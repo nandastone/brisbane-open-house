@@ -85,6 +85,7 @@ class FormResource {
 			self::FK_DELIVERY,
 			self::FK_CONTACTS,
 			self::FK_OPEN_DAYS,
+			self::FK_OTHER_DAY,
 			self::FK_SATURDAY_OPENING_HOURS,
 			self::FK_SUNDAY_OPENING_HOURS,
 			self::FK_TYPE_OF_ACCESS,

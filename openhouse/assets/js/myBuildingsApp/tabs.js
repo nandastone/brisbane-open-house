@@ -19,6 +19,7 @@ export default [
 		description: '',
 		fields: {
 			'field_5ca6f467dcaed': { required: true }, // What days will you be open for BOH
+			'field_62a06a74a9626': { required: false }, // Text field appears when other day is selected
 			'field_5caae315ec23c': { required: false }, // Saturday 12th 2019 Opening Hours
 			'field_5cac85c49acb3': { required: false }, // Sunday 13th 2019 Opening Hours
 			'field_5b5556ab03a05': { required: true }, // Type of access

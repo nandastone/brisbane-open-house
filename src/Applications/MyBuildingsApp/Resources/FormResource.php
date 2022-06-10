@@ -24,6 +24,7 @@ class FormResource {
 	const FK_TOUR_TIPS_OTHER = 'field_5cabf7c469ed2';
 	const FK_DRESS_REQUIREMENTS = 'field_5cabf7e969ed3';
 	const FK_WHEELCHAIR_ACCESS = 'field_5b5670cf9b1ae';
+	const FK_OTHER_WHEELCHAIR_ACCESS = 'field_62a2b14305d9a';
 	const FK_GUIDED_TOURS_ON_SUN_SAT = 'field_5cabf84669ed4';
 	const FK_GUIDED_TOURS_ON_SUN_SAT_NO = 'field_5cabf85f69ed5';
 	const FK_ADDITIONAL_ACTIVITIES_WEEKEND_BOOL = 'field_5cabf89e69ed6';
@@ -85,6 +86,7 @@ class FormResource {
 			self::FK_DELIVERY,
 			self::FK_CONTACTS,
 			self::FK_OPEN_DAYS,
+			self::FK_OTHER_DAY,
 			self::FK_SATURDAY_OPENING_HOURS,
 			self::FK_SUNDAY_OPENING_HOURS,
 			self::FK_TYPE_OF_ACCESS,
@@ -94,6 +96,7 @@ class FormResource {
 			self::FK_TOUR_TIPS_OTHER,
 			self::FK_DRESS_REQUIREMENTS,
 			self::FK_WHEELCHAIR_ACCESS,
+			self::FK_OTHER_WHEELCHAIR_ACCESS,
 			self::FK_GUIDED_TOURS_ON_SUN_SAT,
 			self::FK_GUIDED_TOURS_ON_SUN_SAT_NO,
 			self::FK_ADDITIONAL_ACTIVITIES_WEEKEND_BOOL,
