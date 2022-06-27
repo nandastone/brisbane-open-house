@@ -9,7 +9,10 @@ export default [
 			'field_5b555f4bf6e67': { required: true }, // Building Address,
 			'field_5b5543fb965b0': { required: true }, // Delivery Address,
 			'field_5b55440b965b1': { required: true, max: 2, firstIsRequired: true, shouldAppendWithCount: true }, // Contact (Repeater)
-
+			'field_62b91798fe981': { required: false },
+			'field_62b917bcfe982': { required: false }, // Social Media Name,
+			'field_62b917c6fe983': { require: false }, // Social Media Email,
+			'field_62b917cdfe984': { require: false }, // Social Media Phone,
 		},
 	},
 	{
@@ -25,6 +28,9 @@ export default [
 			'field_5b5556ab03a05': { required: true }, // Type of access
 			'field_5b55576803a06': { required: false, isRightAlignLabel: true }, // Type of access other
 			'field_5b5666f19561d': { required: false }, // Times or frequency of guided tours
+			'field_62b91b5b6454f': { required: false}, // The meeting point is
+			'field_62b91d9d32f55': { required: false}, // Queue external or internal
+			'field_62b91ea2c40ae': { required: false}, // Queue undercover
 			'field_5cabf2fc71031': { required: true }, // Tour tips
 			'field_5cabf7c469ed2': { required: false, isRightAlignLabel: true }, // Tour tips others
 			'field_5cabf84669ed4': { required: true }, // GUIDED_TOURS_ON_SUN_SAT
@@ -32,18 +38,30 @@ export default [
 			'field_5cabf89e69ed6': { required: true }, // FK_ADDITIONAL_ACTIVITIES_WEEKEND_BOOL
 			'field_5cabf8b969ed7': { required: false }, // FK_ADDITIONAL_ACTIVITIES_WEEKEND
 			'field_5cabf8ef69ed8': { required: false, isRightAlignLabel: true }, // FK_ADDITIONAL_ACTIVITIES_WEEKEND_OTHER
+			'field_62b9205817231': { required: false },
+			'field_62b9208d17232': { required: false },
+			'field_62b9208d17233': { required: false },
+			'field_62b920ab17234': { required: false },
+			'field_62b920c617235': { required: false },
 			'field_5cabf7e969ed3': { required: false }, // Dress Requirements
 			'field_5b5670cf9b1ae': { required: true }, // Wheelchair access
 			'field_62a2b14305d9a': { required: false, isRightAlignLabel: true }, // Other wheelchair access
+			'field_62b933bfde1e7': { required: false }, // Toilets availability
+			'field_62b935f401d4b': { required: false, isRightAlignLabel: true }, // Toilets availability comments
+			'field_62b9369fd4bf5': { required: false }, // Supply portaloos
+			'field_62b937f9138a6': { required: false }, // Wet weather contingency
+			'field_62b939255fafe': { required: false, isRightAlignLabel: true }, // Wet weather contingency comments
 		}
 	},
 	{
 		key: 'STAFFING',
 		name: 'STAFFING',
 		isSaved: false,
-		description: 'Building owners must provide their own representatives to run tours or facilitate detailed activities.  If needed, BOH can provide a limited number of volunteers to assist with general duties such as managing queues, counting visitors and greeting guests.',
+		description: 'Building owners must provide their own representatives to run tours or facilitate detailed activities.',
 		fields: {
+			'field_62b94215da9fc': { required: true }, // Confirm staff in building
 			'field_5cac415211938': { required: true }, // Would you like to apply for volunteers?
+			'field_62b94c6289cf7': { required: true }, // Contact building representative
 		}
 	},
 	{
@@ -54,6 +72,7 @@ export default [
 		fields: {
 			'field_5cac43b5e7c32': { required: true }, // Should building be pre-booked
 			'field_5cac43cae7c33': { required: false }, // Tour maximum capacity
+			'field_62b96643e869f': { required: false }, // Pre-booked regularity
 		}
 	},
 	{
@@ -95,7 +114,7 @@ export default [
 		key: 'PHOTOGRAPHS',
 		name: 'PHOTOGRAPHS',
 		isSaved: false,
-		description: 'Photographs of your building will appear in the BOH Guide Book, website and promotional material. Please supply 3-5 high resolution images (portrait and landscape). Use this image naming protocol:  BuildingName_PhotographerName.',
+		description: 'Photographs of your building will appear in the BOH Guide Map, website and digital promotional material. Please supply 3-5 high-resolution images (portrait and landscape). Use this image naming protocol: BuildingName_PhotographerName',
 		fields: {
 			// 'field_5cac831c2a1cf': { required: true }, // Image to use
 			'field_5cac834f2a1d0': { required: false, max: 5 }, // Images

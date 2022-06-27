@@ -177,7 +177,7 @@ body.page-template-template-my-buildings {
 
 		  &.has-tooltip {
 			display: flex;
-			align-items: center;
+			// align-items: center;
 
 			.helper {
 			  order: 2;
@@ -246,6 +246,7 @@ body.page-template-template-my-buildings {
 			color: $color-text-body;
 			font-size: 20px;
 			letter-spacing: 0.75px;
+      line-height: 1.2;
 			text-align: left;
 
 			span.helper.helper-optional {
@@ -253,6 +254,33 @@ body.page-template-template-my-buildings {
 			}
 		  }
 		}
+      &.Form-STAFFING {
+        .form-group {
+          flex-wrap: wrap;
+          &:nth-child(3),
+          &:nth-child(4) {
+            &::before {
+              @include font-atrament-semibold();
+              font-size: 20px;
+              letter-spacing: 0.30px;
+              color: #444;
+              line-height: 1.2;
+              padding: 0 15px 15px 15px;
+              width: 100%;
+            }
+          }
+          &:nth-child(3) {
+            &::before {
+              content: "BOH can provide a limited number of volunteers to assist with general duties such as managing queues, registration management for tours & pre-booked tours, counting visitors, greeting guests and directional support inside the building.";
+            }
+          }
+          &:nth-child(4) {
+            &::before {
+              content: "Each building MUST have its own staff who is the contact person for the site and responsible for emergencies and/or fire evacuation on BOH event dates.";
+            }
+          }
+        }
+      }
 	  }
 	}
 
@@ -504,5 +532,127 @@ body.page-template-template-my-buildings {
   .fade.in.modal {
 	display: flex !important;
 	align-items: center;
+  }
+}
+
+label {
+  &[for="WORDPRESS_POST_TITLE.value"],
+  &[for="field_5ca6f467dcaed.value"],
+  &[for="field_5cac43b5e7c32.value"],
+  &[for="field_5b4bfd944a5c9.value"],
+  &[for="field_5cac821b3a483.value"],
+  &[for="field_5cac851a43b82.value"] {
+    &::before {
+      content: "1) ";
+    }
+  }
+  &[for="field_5b555f4bf6e67.value"],
+  &[for="field_5caae315ec23c.value"],
+  &[for="field_5cac43cae7c33.value"],
+  &[for="field_5cb40d7cb1a22.value"],
+  &[for="field_5b555bb7097d8.value"] {
+    &::before {
+      content: "2) ";
+    }
+  }
+  &[for="field_5b5543fb965b0.value"],
+  &[for="field_5cac85c49acb3.value"],
+  &[for="field_62b96643e869f.value"],
+  &[for="field_5b4bfd094a5c8.value"] {
+    &::before {
+      content: "3) ";
+    }
+  }
+  &[for="field_5b55440b965b1.value.0.field_5b554428965b2"],
+  &[for="field_5b5556ab03a05.value"],
+  &[for="field_5b555e5b4f01b.value"] {
+    &::before {
+      content: "4) ";
+    }
+  }
+  &[for="field_5b55440b965b1.value.1.field_5b554428965b2"],
+  &[for="field_5b5556ab03a05.value"],
+  &[for="field_5cac809e03e7f.value"] {
+    &::before {
+      content: "5) ";
+    }
+  }
+  &[for="field_62b91798fe981.value"],
+  &[for="field_5b5666f19561d.value"],
+  &[for="field_5b4bfdbb4a5ca.value"] {
+    &::before {
+      content: "6) ";
+    }
+  }
+  &[for="field_62b91b5b6454f.value"],
+  &[for="field_5b555e774f01c.value"] {
+    &::before {
+      content: "7) ";
+    }
+  }
+  &[for="field_62b91d9d32f55.value"] {
+    &::before {
+      content: "8) ";
+    }
+  }
+  &[for="field_62b91ea2c40ae.value"] {
+    &::before {
+      content: "9) ";
+    }
+  }
+  &[for="field_5cabf2fc71031.value"] {
+    &::before {
+      content: "10) ";
+    }
+  }
+  &[for="field_5cabf84669ed4.value"] {
+    &::before {
+      content: "11) ";
+    }
+  }
+  &[for="field_5cabf85f69ed5.value"] {
+    &::before {
+      content: "12) ";
+    }
+  }
+  &[for="field_5cabf89e69ed6.value"] {
+    &::before {
+      content: "13) ";
+    }
+  }
+  &[for="field_5cabf8b969ed7.value"] {
+    &::before {
+      content: "14) ";
+    }
+  }
+  &[for="field_62b9205817231.value"] {
+    &::before {
+      content: "15) ";
+    }
+  }
+  &[for="field_5cabf7e969ed3.value"] {
+    &::before {
+      content: "16) ";
+    }
+  }
+  &[for="field_5b5670cf9b1ae.value"] {
+    &::before {
+      content: "17) ";
+    }
+  }
+  &[for="field_62b933bfde1e7.value"] {
+    &::before {
+      content: "18) ";
+    }
+  }
+  &[for="field_62b9369fd4bf5.value"] {
+    &::before {
+      content: "19) ";
+    }
+  }
+  &[for="field_62b937f9138a6.value"] {
+    &::before {
+      content: "20) ";
+    }
   }
 }

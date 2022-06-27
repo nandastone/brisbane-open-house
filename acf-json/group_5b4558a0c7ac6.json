@@ -478,6 +478,99 @@
                     "ui": 1,
                     "ui_on_text": "",
                     "ui_off_text": ""
+                },
+                {
+                    "key": "field_62b90b215ccba",
+                    "label": "Is planning phase contact:",
+                    "name": "is_planning_phase_contact",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62b91798fe981",
+            "label": "Social Media & Publicity Contact Details",
+            "name": "social_media_publicity",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_62b917bcfe982",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62b917c6fe983",
+                    "label": "Email",
+                    "name": "email",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62b917cdfe984",
+                    "label": "Phone",
+                    "name": "phone",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -499,7 +592,7 @@
         },
         {
             "key": "field_5ca6f467dcaed",
-            "label": "What days will you be open for BOH",
+            "label": "What days will you be open for BOH \/ VOB",
             "name": "what_days_will_you_be_open_for_boh",
             "type": "select",
             "instructions": "",
@@ -553,7 +646,7 @@
         },
         {
             "key": "field_5caae315ec23c",
-            "label": "Saturday 12th 2019 Opening Hours",
+            "label": "Saturday Opening Hours",
             "name": "saturday_opening_hours",
             "type": "group",
             "instructions": "",
@@ -608,7 +701,7 @@
         },
         {
             "key": "field_5cac85c49acb3",
-            "label": "Sunday 13th 2019 Opening Hours",
+            "label": "Sunday Opening Hours",
             "name": "sunday_13th_2019_opening_hours",
             "type": "group",
             "instructions": "",
@@ -731,6 +824,63 @@
             "new_lines": ""
         },
         {
+            "key": "field_62b91b5b6454f",
+            "label": "The meeting point for tours, booked tours, guided tours is",
+            "name": "the_meeting_point_for_tours_booked_tours_guided_tours_is",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
+        },
+        {
+            "key": "field_62b91d9d32f55",
+            "label": "Will the queue be within the building or external to the building?",
+            "name": "the_queue_be_within_the_building_or_external",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62b91ea2c40ae",
+            "label": "Will the queue for access to the building be undercover?",
+            "name": "will_the_queue_for_access_to_the_building_be_undercover",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5cabf2fc71031",
             "label": "Tour tips",
             "name": "tour_tips",
@@ -777,7 +927,7 @@
         },
         {
             "key": "field_5cabf84669ed4",
-            "label": "If the building will be open both Saturday 12 and Sunday 13, will the guided tours be available both days?",
+            "label": "If the building will be open both Saturday and Sunday, will guided tours be available both days",
             "name": "if_the_building_will_be_open_both_saturday_12_and_sunday_13_will_the_guided_tours_be_available_both_days",
             "type": "radio",
             "instructions": "",
@@ -856,7 +1006,7 @@
                 "Workshops\/talks": "Workshops\/talks",
                 "Musical performances": "Musical performances",
                 "Refreshments available": "Refreshments available",
-                "Cafe\/restaurant": "Cafe\/restaurant"
+                "Food & Beverage": "Food & Beverage"
             },
             "allow_custom": 0,
             "default_value": [],
@@ -883,6 +1033,99 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_62b9205817231",
+            "label": "What additional food & beverage options do you have to offer the community on the day?",
+            "name": "what_additional_food_options_for_community",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_62b9208d17232",
+                    "label": "Café",
+                    "name": "cafe",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62b9209517233",
+                    "label": "Restaurant",
+                    "name": "restaurant",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62b920ab17234",
+                    "label": "Are these in-house or a pop up",
+                    "name": "are_these_in_house_or_a_pop_up",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62b920c617235",
+                    "label": "Other",
+                    "name": "other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         },
         {
             "key": "field_5cabf7e969ed3",
@@ -918,7 +1161,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "55",
                 "class": "",
                 "id": ""
             },
@@ -954,6 +1197,101 @@
             "maxlength": ""
         },
         {
+            "key": "field_62b933bfde1e7",
+            "label": "Will toilets be available to BOH visitors on event days?",
+            "name": "will_your_building_or_space_have_toilets_available",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62b935f401d4b",
+            "label": "Comments",
+            "name": "toilets_availability_comments",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62b9369fd4bf5",
+            "label": "If not, would you supply Portaloos?",
+            "name": "would_you_supply_portaloos",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62b937f9138a6",
+            "label": "For wet weather contingency, will visitors have cover whilst queueing and waiting for tours?",
+            "name": "wet_weather_contingency",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62b939255fafe",
+            "label": "More information",
+            "name": "wet_weather_contingency_comments",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_5cac414611937",
             "label": "Staffing",
             "name": "",
@@ -968,6 +1306,25 @@
             },
             "placement": "left",
             "endpoint": 0
+        },
+        {
+            "key": "field_62b94215da9fc",
+            "label": "Please confirm you will staff your building tours and facilitate detailed activities",
+            "name": "confirm_you_will_staff_your_building_tours",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         },
         {
             "key": "field_5cac415211938",
@@ -987,6 +1344,25 @@
             "ui": 1,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_62b94c6289cf7",
+            "label": "Will the person be the event person contact or another assigned building representative.",
+            "name": "contact_or_another_assigned_building_representative",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_5cac438be7c31",
@@ -1043,6 +1419,25 @@
             "min": "",
             "max": "",
             "step": ""
+        },
+        {
+            "key": "field_62b96643e869f",
+            "label": "How regular will the pre-booked tours be conducted? Ie. Every 30 mins, every hour.",
+            "name": "pre_booked_regularity",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5cac804e03e7e",
@@ -1400,5 +1795,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654829857
+    "modified": 1656317562
 }
