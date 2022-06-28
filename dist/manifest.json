@@ -1,8 +1,8 @@
 {
-  "globalStyles.css": "/wp-content/themes/openhouse/dist/globalStyles.54d8389b80a2c176c0fb.css",
-  "globalStyles.js": "/wp-content/themes/openhouse/dist/globalStyles.54d8389b80a2c176c0fb.js",
-  "main.js": "/wp-content/themes/openhouse/dist/main.54d8389b80a2c176c0fb.js",
-  "myBuildings.js": "/wp-content/themes/openhouse/dist/myBuildings.54d8389b80a2c176c0fb.js",
-  "fonts/app.scss": "/wp-content/themes/openhouse/dist/fonts/glyphicons-halflings-regular.woff2",
-  "images/app.scss": "/wp-content/themes/openhouse/dist/images/wishlist-tick.svg"
+  "globalStyles.css": "http://localhost:8888/boh/wp-content/themes/openhouse/dist/globalStyles.css",
+  "globalStyles.js": "http://localhost:8888/boh/wp-content/themes/openhouse/dist/globalStyles.js",
+  "main.js": "http://localhost:8888/boh/wp-content/themes/openhouse/dist/main.js",
+  "myBuildings.js": "http://localhost:8888/boh/wp-content/themes/openhouse/dist/myBuildings.js",
+  "fonts/app.scss": "http://localhost:8888/boh/wp-content/themes/openhouse/dist/fonts/glyphicons-halflings-regular.woff2",
+  "images/app.scss": "http://localhost:8888/boh/wp-content/themes/openhouse/dist/images/wishlist-tick.svg"
 }

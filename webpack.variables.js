@@ -1,4 +1,4 @@
-var webpackDevServer = 'http://localhost:8888/'; // Webpack Dev Server
+var webpackDevServer = 'http://localhost:8888/boh/'; // Webpack Dev Server
 var phpApplicationVHost = 'http://brisbaneopenhouse.jsa.test'; // Your external HTML server
 var publicFolder = "./../../../"; // which folder is served as the public folder?
 var publicOutputFolder = 'wp-content/themes/openhouse/dist/'; // if css should be generated as http://mydomain.com/dist/main.css, then it should be "dist/"

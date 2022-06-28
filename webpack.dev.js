@@ -36,7 +36,7 @@ const config = {
                     {
                         loader: "file-loader",
                         options: {
-                          publicPath: '/wp-content/themes/openhouse/dist/',
+                          publicPath: myVariables.serverURL + '/wp-content/themes/openhouse/dist/',
                           name: "fonts/[name].[ext]",
                         }
                     },
@@ -48,7 +48,7 @@ const config = {
                     {
                         loader: "file-loader",
                         options: {
-                            publicPath: '/wp-content/themes/openhouse/dist/',
+                            publicPath: myVariables.serverURL + '/wp-content/themes/openhouse/dist/',
                             name: "images/[name].[ext]",
                         }
                     },
