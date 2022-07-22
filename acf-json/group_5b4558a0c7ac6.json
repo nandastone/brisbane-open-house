@@ -1606,7 +1606,7 @@
         },
         {
             "key": "field_5cac821b3a483",
-            "label": "Does your current building insurance include the 12th and 13th of October?",
+            "label": "Does your current building insurance include the 21, 27 & 28 August 2022?",
             "name": "do_you_have_public_liability_insurance",
             "type": "true_false",
             "instructions": "",
@@ -1628,7 +1628,7 @@
             "label": "What is the current policy expiry date?",
             "name": "what_is_the_current_policy_expiry_date",
             "type": "text",
-            "instructions": "We will require a copy of your certificate current at 12 Oct 19",
+            "instructions": "We will require a copy of your certificate current at 21, 27 & 28 August 2022.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -1795,5 +1795,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1656371959
+    "modified": 1658452433
 }
