@@ -1,8 +1,8 @@
 {
-  "globalStyles.css": "/wp-content/themes/openhouse/dist/globalStyles.bb69f9c4dcfc132079e7.css",
-  "globalStyles.js": "/wp-content/themes/openhouse/dist/globalStyles.bb69f9c4dcfc132079e7.js",
-  "main.js": "/wp-content/themes/openhouse/dist/main.bb69f9c4dcfc132079e7.js",
-  "myBuildings.js": "/wp-content/themes/openhouse/dist/myBuildings.bb69f9c4dcfc132079e7.js",
+  "globalStyles.css": "/wp-content/themes/openhouse/dist/globalStyles.6b2b48a283ba9102be74.css",
+  "globalStyles.js": "/wp-content/themes/openhouse/dist/globalStyles.6b2b48a283ba9102be74.js",
+  "main.js": "/wp-content/themes/openhouse/dist/main.6b2b48a283ba9102be74.js",
+  "myBuildings.js": "/wp-content/themes/openhouse/dist/myBuildings.6b2b48a283ba9102be74.js",
   "fonts/app.scss": "/wp-content/themes/openhouse/dist/fonts/glyphicons-halflings-regular.woff2",
   "images/app.scss": "/wp-content/themes/openhouse/dist/images/wishlist-tick.svg"
 }
