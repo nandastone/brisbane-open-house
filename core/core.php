@@ -52,13 +52,19 @@ function add_to_context($data) {
 		'hide_empty' => false,
 	));
 
-
 	$args = array(
 		'posts_per_page'   => -1,
 		'post_type'         => 'building',
 		'post_status'       => 'publish',
 		'order_by'			=> 'meta_value_num',
-		'meta_key'			=> '_building_no'
+		'meta_key'			=> '_building_no',
+		// 'tax_query' => [
+		// 	[
+		// 		'taxonomy' => 'building_precinct',
+		// 		'terms' => 42,
+		// 		'field' => 'term_id',
+		// 	]
+		// ]
 	);
 	$query_buildings = new WP_Query( $args );
 	$data['buildings'] = Timber::get_posts($query_buildings);
@@ -143,7 +149,7 @@ function add_to_context($data) {
 	$data['user_favorites_count'] = strip_tags(get_user_favorites_count(get_current_user_id()));
 
 
-	// Photo comp winners 
+	// Photo comp winners
 	$winner_years = get_terms( 'winner_year', array(
 		'hide_empty' => true
 	));
