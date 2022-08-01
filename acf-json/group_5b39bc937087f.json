@@ -39,7 +39,7 @@
                     "max": "",
                     "step": 5,
                     "prepend": "",
-                    "append": ""
+                    "append": "%"
                 },
                 {
                     "key": "field_5b39bcb8f6cc7",
@@ -124,5 +124,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659331658
+    "modified": 1659332522
 }

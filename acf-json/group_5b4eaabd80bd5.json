@@ -3,6 +3,26 @@
     "title": "Page Content",
     "fields": [
         {
+            "key": "field_62e7675119812",
+            "label": "Background Opacity",
+            "name": "background_opacity",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 40,
+            "min": "",
+            "max": "",
+            "step": 5,
+            "prepend": "",
+            "append": "%"
+        },
+        {
             "key": "field_5b4eaad2e5869",
             "label": "Content",
             "name": "content",
@@ -1379,5 +1399,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659071147
+    "modified": 1659332554
 }
