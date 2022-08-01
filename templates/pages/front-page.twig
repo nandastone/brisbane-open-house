@@ -10,14 +10,15 @@
 				{% set slides = post.get_field('slide') %}
 				{% for slide in slides %}
 					<div class="slide-wrapper" style="background-image: url({{ slide.background_image.url }});">
+						<div class="slide-overlay" style="opacity: {{ slide.background_opacity }}%;"></div>
 						<div class="slide-content-wrapper">
 							<h1 class="main-heading">{{ slide.main_heading }}</h1>
 							<h2 class="sub-heading">{{ slide.sub_heading }}</h2>
 						</div>
 						{% if slide.background_image.description %}
-							<div class="image-credit">{{ slide.background_image.description }}	</div>					
+							<div class="image-credit">{{ slide.background_image.description }}	</div>
 						{% endif %}
-					</div>					
+					</div>
 				{% endfor %}
 				</div>
 			</div>
@@ -78,6 +79,3 @@
 {% block prefooter %}
 {% include 'partials/front-sponsors.twig' %}
 {% endblock %}
-
-
-

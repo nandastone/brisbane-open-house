@@ -22,6 +22,26 @@
             "button_label": "",
             "sub_fields": [
                 {
+                    "key": "field_62e7641b2c9dd",
+                    "label": "Background Opacity",
+                    "name": "background_opacity",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 40,
+                    "min": "",
+                    "max": "",
+                    "step": 5,
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_5b39bcb8f6cc7",
                     "label": "Background Image",
                     "name": "background_image",
@@ -101,7 +121,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1553125402
+    "show_in_rest": 0,
+    "modified": 1659331658
 }
