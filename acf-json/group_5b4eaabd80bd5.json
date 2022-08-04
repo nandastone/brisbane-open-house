@@ -94,6 +94,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62eb4657d7872",
+                            "label": "Display Filters",
+                            "name": "filters",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_5b4edc1796c20",
                             "label": "Message",
                             "name": "",
@@ -1399,5 +1418,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659332554
+    "modified": 1659586202
 }

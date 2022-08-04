@@ -1,35 +1,36 @@
 <div class="section">
 	<div class="buildings">
-			<div class="before-content-spacer" data-spy="affix" data-offset-top="450"></div>
-			<div class="buildings-filter before-content" data-spy="affix" data-offset-top="450">
-				<div class="container">
-					<div class="day-filters">
-						<ul class="date-toggle">
-							<li><div data-date="all" class="day-filter active"><div class="day">Both Days</div></div></li>
-							<li><div data-date="saturday" class="day-filter"><div class="day">SAT</div></div></li>
-							<li><div data-date="sunday" class="day-filter"><div class="day">SUN</div></div></li>
-						</ul>
-					</div>
-					{% if not content.building_precinct.slug %}
-						<select class="building-precinct selectpicker">
-							<option value="all" selected="selected">All Precincts</option>
-							{% for building_precinct in building_precincts %}
-								<option value="{{building_precinct.slug}}">{{building_precinct.name}}</option>
-							{% endfor %}
-						</select>
-					{% endif %}							
-					<select class="building-types selectpicker">
-						<option value="all" selected="selected">All Building Types</option>
-						{% for building_type in building_types %}
-							<option value="{{building_type.slug}}">{{building_type.name}}</option>
+		<div class="before-content-spacer" data-spy="affix" data-offset-top="450"></div>
+		<div class="buildings-filter before-content" data-spy="affix" data-offset-top="450" style="{{ content.filters ? 'display: block' : 'display: none' }}">
+			<div class="container">
+				<div class="day-filters">
+					<ul class="date-toggle">
+						<li><div data-date="all" class="day-filter active"><div class="day">Both Days</div></div></li>
+						<li><div data-date="saturday" class="day-filter"><div class="day">SAT</div></div></li>
+						<li><div data-date="sunday" class="day-filter"><div class="day">SUN</div></div></li>
+					</ul>
+				</div>
+				{% if not content.building_precinct.slug %}
+					<select class="building-precinct selectpicker">
+						<option value="all" selected="selected">All Precincts</option>
+						{% for building_precinct in building_precincts %}
+							<option value="{{building_precinct.slug}}">{{building_precinct.name}}</option>
 						{% endfor %}
 					</select>
-					<div class="filter-buttons">
-						<button class="active button-list">List</button>
-						<button class="button-map">Map</button>
-					</div>
+				{% endif %}
+				<select class="building-types selectpicker">
+					<option value="all" selected="selected">All Building Types</option>
+					{% for building_type in building_types %}
+						<option value="{{building_type.slug}}">{{building_type.name}}</option>
+					{% endfor %}
+				</select>
+				<div class="filter-buttons">
+					<button class="active button-list">List</button>
+					<button class="button-map">Map</button>
 				</div>
 			</div>
+		</div>
+
 		<div class="container">
 			<div class="buildings-map-wrapper">
 				<div data-google-map class="map" >
