@@ -19,7 +19,7 @@
 					</select>
 				{% endif %}
 				<select class="building-types selectpicker">
-					<option value="all" selected="selected">All Building Types</option>
+					<option value="all" selected="selected">All Building Types & Interests</option>
 					{% for building_type in building_types %}
 						<option value="{{building_type.slug}}">{{building_type.name}}</option>
 					{% endfor %}
