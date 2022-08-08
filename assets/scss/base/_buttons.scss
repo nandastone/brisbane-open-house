@@ -1,0 +1,13 @@
+a.btn {
+  &.btn-primary {
+    background-color: $color-yellow;
+    border: none;
+    color: $color-white;
+    @media (pointer: fine) {
+      &:hover,
+      &:focus {
+        background-color: $color-grey;
+      }
+    }
+  }
+}

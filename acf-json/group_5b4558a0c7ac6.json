@@ -180,9 +180,9 @@
         },
         {
             "key": "field_5d0841b166bd2",
-            "label": "Eventbrite event",
-            "name": "eventbrite_event",
-            "type": "select",
+            "label": "Eventbrite links",
+            "name": "eventbrite_links",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -191,37 +191,29 @@
                 "class": "",
                 "id": ""
             },
-            "choices": [],
-            "default_value": false,
-            "allow_null": 1,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
-            "key": "field_5b555c3d097dd",
-            "label": "Fallback Booking Link",
-            "name": "fallback_booking_link",
-            "type": "url",
-            "instructions": "If the API fails to respond with data, instead of displaying \"Booked Out\", we will use this URL for the \"Book Now\" button.",
-            "required": 1,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5d0841b166bd2",
-                        "operator": "!=empty"
-                    }
-                ]
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "add Link",
+            "sub_fields": [
+                {
+                    "key": "field_62f197f99da7b",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
             ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
+            "choices": []
         },
         {
             "key": "field_5d8d6abc727ef",
@@ -1795,5 +1787,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658452433
+    "modified": 1660000274
 }

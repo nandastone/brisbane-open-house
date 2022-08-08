@@ -636,3 +636,40 @@ function boh_io_cpt_search( $query ) {
 	return $query;
 
 }
+
+/* Add TinyMCE */
+function my_mce_buttons( $buttons ) {
+	array_unshift( $buttons, 'styleselect' );
+
+	return $buttons;
+}
+add_filter( 'mce_buttons_2', 'my_mce_buttons' );
+
+function wpex_styles_dropdown( $settings ) {
+
+	$new_styles = array(
+		[
+			'title'	=> __( 'Buttons', 'wpex' ),
+			'items'	=> [
+				[
+					'title'		=> __('Button Primary', 'wpex'),
+					'selector'	=> 'a',
+					'classes'	=> 'btn btn-primary',
+				],
+				[
+					'title'		=> __('Button Default', 'wpex'),
+					'selector'	=> 'a',
+					'classes'	=> 'btn btn-default',
+				],
+			],
+		],
+	);
+
+	$settings['style_formats_merge'] = false;
+
+	$settings['style_formats'] = json_encode( $new_styles );
+
+	return $settings;
+
+}
+add_filter( 'tiny_mce_before_init', 'wpex_styles_dropdown' );

@@ -4,7 +4,7 @@
 	letter-spacing: .075em;
 	text-transform: uppercase;
 	font-size: 18px;
-	
+
 	.section-wrapper {
 		display: flex;
 		flex-direction: row;
@@ -16,7 +16,7 @@
 			width: calc(100% / 3);
 			position: relative;
 		}
-		
+
 		.event-date,
 		.event-time,
 		.event-venue,
@@ -39,7 +39,7 @@
 				@include icon-font;
 			}
 		}
-		
+
 		.event-date::before {
 			content: "\63";
 		}
@@ -76,7 +76,7 @@
 			    }
 			}
 			.wishlist{
-				@include favourite;				
+				@include favourite;
 			}
 			.event-ticket-type {
 				a {
@@ -88,7 +88,7 @@
 				}
 				&.booked-out {
 					a {
-						background-color: $color-yellow;						
+						background-color: $color-yellow;
 					}
 				}
 				&.no-booking-required {
@@ -97,9 +97,9 @@
 			}
 		}
 		.event-ticket-type.no-booking-required {
-			color: $color-light-grey; 
+			color: $color-light-grey;
 		}
-	}	
+	}
 }
 
 .single-event .post-body  {
@@ -135,5 +135,10 @@
 				    margin-left: -40px;
 			}
 		}
+	}
+}
+.eventbrite-links {
+	a.btn:not(:last-child) {
+		margin-bottom: 1rem;
 	}
 }
