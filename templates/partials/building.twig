@@ -140,26 +140,35 @@
 				</div>
 				<div class="col-md-4">
 					<div class="buildings-map-wrapper">
-						<div data-google-map class="map">
-							<div class="marker" data-lat="{{ post.google_map['lat'] }}" data-lng="{{ post.google_map['lng'] }}" label="{{ post.building_no }}" precinct="{{post.building_precinct[0].slug}}" building-type="{{post.building_type[0].slug}}">
-								<div class="building-content">
-									<div class="building_id">{{ post.building_no }}</div>
-									<h3 class="building-title">{{post.title}}</h3>
-									<p>{{ post.address }}</p>
-								</div>
-							</div>
+						<div class="map-iframe-wrapper">
+							<iframe
+								width="600"
+								height="450"
+								style="border:0"
+								loading="lazy"
+								allowfullscreen
+								referrerpolicy="no-referrer-when-downgrade"
+								src="https://www.google.com/maps/embed/v1/place?key={{ google_maps_api_key }}
+									&q={{ post.google_map['address'] }}">
+							</iframe>
 						</div>
-						<div class="map-direction"><a href="https://www.google.com/maps?saddr=My+Location&daddr={{post.google_map['lat']}},{{post.google_map['lng']}}" target="_blank">Get Directions</a></div>
 					</div>
-					{% if post.year_built%}
-						<div class="location-history">{{post.year_built}}</div>
-					{% endif %}
+
 					{% if post.building_architect or post.get_field('building_architect_additional') %}
 						<div class="location-addision">
 							{{post.building_architect}}
 							{{ (post.get_field('building_architect_additional')) ? '<br>' ~ post.get_field('building_architect_additional') : '' }}
 						</div>
 					{% endif %}
+
+					{% if post.year_built%}
+						<div class="location-history">{{post.year_built}}</div>
+					{% endif %}
+
+					<div class="location-directions">
+						<a href="https://www.google.com/maps?saddr=My+Location&daddr={{post.google_map['lat']}},{{post.google_map['lng']}}" target="_blank">Get Directions</a>
+					</div>
+
 					{% if post.building_website%}
 						<div class="location-website"><a href="{{post.building_website}}" target="_blank">Visit Website</a></div>
 					{% endif %}

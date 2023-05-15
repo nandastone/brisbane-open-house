@@ -409,12 +409,15 @@
 			}
 		}
 	}
+
+	.location-directions,
 	.location-history,
 	.location-addision,
 	.location-website {
 		padding-left: 30px;
 		margin-bottom: 20px;
 		position: relative;
+
 		&::before {
 			content: "";
 			@include icon-font;
@@ -429,34 +432,51 @@
 			display: block;
 		}
 	}
+
+	.location-directions {
+		&::before {
+			content: "\69";
+		}
+	}
+
 	.location-history {
 		&::before {
 			content: "\62";
 		}
 	}
+
 	.location-addision {
 		&::before {
 			content: "\61";
 		}
 	}
+
 	.location-website {
 		&::before {
 			content: "\6f";
 		}
+	}
+
+	.location-directions,
+	.location-website {
 		a {
 			@include Neutraface2Text-Demi;
 			color: $color-grey;
 			display: inline-block;
+
 			&:hover {
 				color: $color-yellow;
 				text-decoration: none;
+
 				&::after {
-					content: "";
-					width: 100%;
 					border-bottom: 1px solid $color-yellow;
-					height: 1px;
+					bottom: 0;
+					content: "";
 					display: block;
-					margin-top: 1px;
+					height: 1px;
+					left: 0;
+					position: absolute;
+					width: 100%;
 				}
 			}
 		}
