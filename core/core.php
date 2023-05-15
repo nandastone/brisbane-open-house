@@ -41,8 +41,7 @@ function add_to_context($data) {
 	$data['logout_url'] = new Timber\FunctionWrapper( 'wp_logout_url', $_SERVER['REQUEST_URI'] );
 
 	$data['site_options'] = get_fields('options');
-	//$data['google_map_api_key'] = env('GOOGLE_MAP_API_KEY');
-	$data['google_map_api_key'] = GOOGLE_MAP_API_KEY;
+	$data['google_maps_api_key'] = get_field('google_maps_api_key', 'option');
 
 	$data['define_when_eventbrite_booking_starts'] = get_field('define_when_eventbrite_booking_starts', 'option');
 	$data['eventbrite_booking_button_starts_at'] = (strlen(get_field('eventbrite_booking_button_starts_at', 'option'))) ? \DateTime::createFromFormat('Ymd', get_field('eventbrite_booking_button_starts_at', 'option')) : null;
@@ -57,14 +56,7 @@ function add_to_context($data) {
 		'post_type'         => 'building',
 		'post_status'       => 'publish',
 		'order_by'			=> 'meta_value_num',
-		'meta_key'			=> '_building_no',
-		// 'tax_query' => [
-		// 	[
-		// 		'taxonomy' => 'building_precinct',
-		// 		'terms' => 42,
-		// 		'field' => 'term_id',
-		// 	]
-		// ]
+		'meta_key'			=> '_building_no'
 	);
 	$query_buildings = new WP_Query( $args );
 	$data['buildings'] = Timber::get_posts($query_buildings);
@@ -73,7 +65,6 @@ function add_to_context($data) {
 		foreach ($terms as $term) {
 			$itemPost->$term = wp_get_post_terms( $itemPost->id, $term );
 		}
-		// print get_favorites_button($itemPost->id, $site_id = null);
 		$itemPost->favorite_count = strip_tags(get_favorites_count($itemPost->id, 1));
 	}
 
@@ -100,11 +91,6 @@ function add_to_context($data) {
 	);
 	$query_faqs = new WP_Query( $args );
 	$data['faqs'] = Timber::get_posts($query_faqs);
-
-	// $sponsor_types = get_terms( 'sponsor_type', array(
-	//     'hide_empty' => false
-	// ));
-	// $data['sponsor_types'] = $sponsor_types;
 
 	$data['sponsors'] = array();
 	foreach ($sponsor_types as $sponsor_type) {
@@ -379,9 +365,8 @@ function fewbricks_brick($brick, $brick_name, $layout = null) {
 }
 
 add_filter('acf/settings/google_api_key', function () {
-	return GOOGLE_MAP_API_KEY;
-	//return env('GOOGLE_MAP_API_KEY');
-	//return 'AIzaSyAyuT8RIqKCtYYxa5mBA5vrDBnj6EB89jE';
+	$context = Timber::get_context();
+	return $context['google_maps_api_key'];
 });
 
 
@@ -412,8 +397,6 @@ add_filter('wp_enqueue_scripts','insert_jquery',1);
 
 add_filter( 'gform_validation_message', 'boh_gf_validation_message', 10, 2 );
 function boh_gf_validation_message( $message, $form ) {
-	//return "<div class='validation_error'>Failed Validation - " . $form['title'] . '</div>';
-	//return $message;
 	return '';
 }
 
@@ -423,15 +406,12 @@ function boh_gf_registration_autologin( $user_id, $user_config, $entry, $passwor
 	$user_login = $user->user_login;
 	$user_password = $password;
 
-	//echo $user_login.' '.$user_password;
-
 	wp_signon( array(
 		'user_login' => $user_login,
 		'user_password' => $user_password,
 		'remember' => false
 	) );
 
-	//wp_redirect($_SERVER['HTTP_REFERER']);
 	echo "<script type='text/javascript'>window.top.location.reload(true);</script>";
 }
 
@@ -490,19 +470,6 @@ function auto_redirect_after_logout(){
 	wp_redirect( home_url() );
 	exit();
 }
-// add_action( 'init', 'open_house_add_shortcodes' );
-
-// function open_house_add_shortcodes() {
-
-//     add_shortcode( 'open_house-login-form', 'open_house_login_form_shortcode' );
-// }
-// function open_house_login_form_shortcode() {
-
-//     if ( is_user_logged_in() )
-//         return '';
-
-//     return wp_login_form( array( 'echo' => false ) );
-// }
 
 
 add_action( 'restrict_manage_posts', 'filter_posts_by_taxonomies' , 10, 2);
