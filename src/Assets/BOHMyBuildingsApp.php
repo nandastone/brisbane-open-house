@@ -19,7 +19,6 @@ class BOHMyBuildingsApp {
     public function __construct()
     {
         $this->package = new Package( new JsonManifestVersionStrategy( get_template_directory() . '/dist/manifest.json' ) );
-        // $this->style_handlers[] = 'myBuildings.css';
         $this->script_handlers[] = 'myBuildings.js';
     }
 

@@ -9,7 +9,7 @@ const config = {
 	mode: env,
 	devtool: false,
 	output: {
-		publicPath: myVariables.paths.publicAssetFolder,
+		publicPath: myVariables.paths.publicFolder,
 		filename: "[name].[hash].js",
 	},
 	module: {

@@ -1,9 +1,7 @@
-import 'isotope-layout';
-import 'jquery-columnizer';
-import 'bootstrap-sass';
-import 'bootstrap-select';
-// import 'slick-carousel';
-// import 'jquery-mask-plugin';
+import "isotope-layout";
+import "jquery-columnizer";
+import "bootstrap-sass";
+import "bootstrap-select";
 
-import 'url-polyfill';
-import './app';
+import "url-polyfill";
+import "./app";
