@@ -1,8 +1,0 @@
-{
-  "globalStyles.css": "./dist/globalStyles.24fc2b2faec0c7208812.css",
-  "globalStyles.js": "./dist/globalStyles.24fc2b2faec0c7208812.js",
-  "main.js": "./dist/main.24fc2b2faec0c7208812.js",
-  "myBuildings.js": "./dist/myBuildings.24fc2b2faec0c7208812.js",
-  "fonts/app.scss": "./dist/fonts/glyphicons-halflings-regular.woff2",
-  "images/app.scss": "./dist/images/wishlist-tick.svg"
-}
