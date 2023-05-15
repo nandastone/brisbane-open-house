@@ -139,26 +139,14 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="buildings-map-wrapper" style="display: none !important;">
-						<div data-google-map class="map" >
+					<div class="buildings-map-wrapper">
+						<div data-google-map class="map">
 							<div class="marker" data-lat="{{ post.google_map['lat'] }}" data-lng="{{ post.google_map['lng'] }}" label="{{ post.building_no }}" precinct="{{post.building_precinct[0].slug}}" building-type="{{post.building_type[0].slug}}">
-								{#<div class="image-wrapper">#}
-									{#<img src="{{post.images[0].src}}" />#}
-									{#{% if post.building_ticket_type[0].slug is not empty and post.building_ticket_type[0].slug == "booked-out" %}#}
-										{#<div class="building-ticket {{ post.building_ticket_type[0].slug }}">{{post.building_ticket_type[0].name}}</div>#}
-									{#{% endif %}#}
-								{#</div>#}
-								{#<div class="building-content">#}
-									{#<div class="building_id">{{ post.building_no }}</div>#}
-									{#<h3 class="building-title">{{post.title}}</h3>#}
-									{#<div class="wishlist"><button class="simplefavorite-button" data-postid="{{post.id}}" data-siteid="1" data-groupid="1" data-favoritecount="{{ post.favorite_count }}" ></button><span>Favourite</span></div>#}
-									{#<div class="links-wrapper">#}
-										{#<div class="readmore-wrapper"><a href="{{post.path}}">View Details</a></div>#}
-										{#{% if post.building_ticket_type[0].slug is not empty and post.building_ticket_type[0].slug != "booked-out" %}#}
-											{#<div class="building-ticket {{ post.building_ticket_type[0].slug }}"><span><a href="{{post.eventbrite_link}}" target="_blank">{{ post.building_ticket_type[0].name }}</a></span></div>#}
-										{#{% endif %}#}
-									{#</div>#}
-								{#</div>#}
+								<div class="building-content">
+									<div class="building_id">{{ post.building_no }}</div>
+									<h3 class="building-title">{{post.title}}</h3>
+									<p>{{ post.address }}</p>
+								</div>
 							</div>
 						</div>
 						<div class="map-direction"><a href="https://www.google.com/maps?saddr=My+Location&daddr={{post.google_map['lat']}},{{post.google_map['lng']}}" target="_blank">Get Directions</a></div>
