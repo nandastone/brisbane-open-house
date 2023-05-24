@@ -17,6 +17,8 @@ Timber uses `dist/manifest.json` to locate the latest built assets, even if they
 
 `.github/workflows/main.yml` exists, but it's unknown if it works. The project can be manually deployed by copying files via SFTP.
 
+Refer to `assets/js/myBuildingsApp/README.md` for React app deployment steps.
+
 ## Wordpress
 
 ### ACF
@@ -40,3 +42,5 @@ https://twig.symfony.com/
 ## Google Maps
 
 The Google Maps API key key is only used for in wp-admin to select a building location. On the frontend https://developers.google.com/maps/documentation/embed/get-started?authuser=1 is used to avoid API charges.
+
+## My Buildings App

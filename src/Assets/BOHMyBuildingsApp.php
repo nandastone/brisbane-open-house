@@ -20,6 +20,7 @@ class BOHMyBuildingsApp {
     {
         $this->package = new Package( new JsonManifestVersionStrategy( get_template_directory() . '/dist/manifest.json' ) );
         $this->script_handlers[] = 'myBuildings.js';
+		$this->style_handlers[] = 'myBuildings.css';
     }
 
     public function set_dependencies(array $array) {
