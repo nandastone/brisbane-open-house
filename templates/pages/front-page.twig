@@ -14,6 +14,12 @@
 						<div class="slide-content-wrapper">
 							<h1 class="main-heading">{{ slide.main_heading }}</h1>
 							<h2 class="sub-heading">{{ slide.sub_heading }}</h2>
+
+							{% if slide.call_to_action_label %}
+								<a href="{{ slide.call_to_action_url}}" class="btn btn-primary">
+									{{ slide.call_to_action_label }}
+								</a>
+							{% endif %}
 						</div>
 						{% if slide.background_image.description %}
 							<div class="image-credit">{{ slide.background_image.description }}	</div>

@@ -6,6 +6,7 @@
             "key": "field_5b39bc9ef6cc6",
             "label": "Slide",
             "name": "slide",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -19,32 +20,13 @@
             "min": 0,
             "max": 0,
             "layout": "row",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
-                {
-                    "key": "field_62e7641b2c9dd",
-                    "label": "Background Opacity",
-                    "name": "background_opacity",
-                    "type": "range",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": 40,
-                    "min": "",
-                    "max": "",
-                    "step": 5,
-                    "prepend": "",
-                    "append": "%"
-                },
                 {
                     "key": "field_5b39bcb8f6cc7",
                     "label": "Background Image",
                     "name": "background_image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 1,
@@ -63,12 +45,37 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_5b39bc9ef6cc6"
+                },
+                {
+                    "key": "field_6479569aaf71f",
+                    "label": "Background Opacity",
+                    "name": "background_opacity",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 40,
+                    "min": 0,
+                    "max": 100,
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_5b39bc9ef6cc6"
                 },
                 {
                     "key": "field_5b39bcdaf6cc8",
                     "label": "Main Heading",
                     "name": "main_heading",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 1,
@@ -82,12 +89,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5b39bc9ef6cc6"
                 },
                 {
                     "key": "field_5b39bcfcdcd08",
                     "label": "Sub Heading",
                     "name": "sub_heading",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -101,9 +110,50 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": "wpautop"
+                    "new_lines": "wpautop",
+                    "parent_repeater": "field_5b39bc9ef6cc6"
+                },
+                {
+                    "key": "field_647955bea2667",
+                    "label": "Call to Action Label",
+                    "name": "call_to_action_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_5b39bc9ef6cc6"
+                },
+                {
+                    "key": "field_647955e7a2668",
+                    "label": "Call to Action URL",
+                    "name": "call_to_action_url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_5b39bc9ef6cc6"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         }
     ],
     "location": [
@@ -124,5 +174,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659332522
+    "modified": 1685673687
 }
