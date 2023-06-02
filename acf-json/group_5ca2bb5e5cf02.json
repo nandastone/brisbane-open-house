@@ -1,11 +1,12 @@
 {
     "key": "group_5ca2bb5e5cf02",
-    "title": "Page: My Buildings fields",
+    "title": "My Buildings",
     "fields": [
         {
             "key": "field_5cb0153be5884",
             "label": "Login intro title",
             "name": "login_intro_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_5cb0154ee5885",
             "label": "Login intro paragraph",
             "name": "login_intro_paragraph",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_5ca2bb6c77c2b",
             "label": "Building list intro title",
             "name": "building_list_intro_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -63,6 +66,7 @@
             "key": "field_5ca2bb8577c2c",
             "label": "Building list intro paragraph",
             "name": "building_list_intro_paragraph",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -82,6 +86,7 @@
             "key": "field_5cb0193618f85",
             "label": "Form intro title",
             "name": "form_intro_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -101,6 +106,7 @@
             "key": "field_5cb0195118f86",
             "label": "Form intro paragraph",
             "name": "form_intro_paragraph",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -134,7 +140,8 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1555044889
+    "show_in_rest": 0,
+    "modified": 1685701181
 }

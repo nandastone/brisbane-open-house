@@ -3,6 +3,29 @@
     "title": "Theme Settings",
     "fields": [
         {
+            "key": "field_6479c2b6cf941",
+            "label": "My Buildings page",
+            "name": "my_buildings_page",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select the \"My Buildings\" dashboard page used for the My Buildings app.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "post_status": "",
+            "taxonomy": "",
+            "filters": "",
+            "return_format": "object",
+            "min": 1,
+            "max": 1,
+            "elements": ""
+        },
+        {
             "key": "field_5b5fa7ef10418",
             "label": "Social Media",
             "name": "social_media",
@@ -198,5 +221,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685673020
+    "modified": 1685701533
 }
