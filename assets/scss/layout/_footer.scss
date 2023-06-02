@@ -1,95 +1,97 @@
 /* CSS Document */
-footer {
+
+.site-footer {
+	@include Neutraface2Text-Book;
+
+	align-items: center;
 	background-color: $background-color-footer;
 	color: $color-black;
-	min-height: 100px;
-	font-size: 13px;
-	@include Neutraface2Text-Book;
 	display: flex;
-    align-items: center;
-	.footer-logo{
-		img{
+	font-size: 13px;
+	min-height: 100px;
+	padding: 20px 0;
+	text-align: center;
+
+	@include breakpoint-gt("md") {
+		padding: 0;
+		text-align: left;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		&::before,
+		&::after {
+			display: none;
+		}
+
+		@include breakpoint-gt("md") {
+			align-items: center;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+	}
+
+	.colophon {
+		@include breakpoint-gt("md") {
+			flex: 0 0 40%;
+			flex-direction: row-reverse;
+		}
+	}
+
+	.footer-logo {
+		display: block;
+
+		@include breakpoint-gt("md") {
+			flex-shrink: 0;
+		}
+
+		img {
 			height: 30px;
-			float: right;
 			width: auto;
 		}
 	}
-	.footer-left {
-		float: left;
-		margin-top: 33px;
-	}
-	.footer-right {
-		float: right;
-	}
-	
-	// Sponsor logos
-	.footer-left a {
-		display: inline-block;
-		vertical-align: middle;
-		margin-right: 10px;
-	}	
-	
+
 	// Footer navigation
 	nav {
 		margin-top: 50px;
-		
+
 		a {
 			display: inline-block;
-			/*color: $color-blue;*/
 			@include font-atrament-light;
 			text-transform: uppercase;
 			text-decoration: none;
 			padding: 12px 0;
 			margin-left: 36px;
-			
+
 			&:hover,
 			&.active {
 				text-decoration: underline;
 			}
 		}
-		
+
 		a:first-of-type {
 			margin-left: 0;
 		}
 	}
-	
-	@include breakpoint-lt('lg') {
+
+	@include breakpoint-lt("lg") {
 		nav a {
 			margin-left: 20px;
 		}
 	}
-	
-	@include breakpoint-lt('md') {
+
+	@include breakpoint-lt("md") {
 		.footer-left {
 			width: 280px;
-			a { 
+			a {
 				margin: 0 10px 20px 0;
 			}
 		}
 		nav a {
 			font-size: em(14px);
 		}
-	}
-	
-	@include breakpoint-lt('sm') {
-		height: auto;
-		.container{
-			display: flex;
-			flex-direction: column-reverse;
-			text-align: center;
-			padding-top: 30px;
-    		padding-bottom: 30px;
-			.footer-logo{
-				margin: 0 auto;
-				float:none;
-				display: inline-block;
-				margin-bottom: 10px;
-			}
-		}
-	}
-	@include breakpoint-lt('xs') {
-/*		.container{
-			display: none;
-		}*/
 	}
 }

@@ -1,13 +1,18 @@
-<footer>
+<footer class="site-footer">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-5">
-				<span>We acknowledge the Traditional Owners of the places in which we live, work and play. We recognise and respect the enduring relationship they have with their lands and waters, and we pay our respects to Elders past, present and emerging.</span>
-			</div>
-			<div class="col-sm-6">
+		<div class="acknowledge">
+			We acknowledge the Traditional Owners of the places in which we live, work
+			and play. We recognise and respect the enduring relationship they have with
+			their lands and waters. We pay our respects to Elders past and present.
+		</div>
 
-                                <a href="/" class="footer-logo"><img src="{{assets}}/images/header-logo.svg" alt="{{ site.name }}"></a><span>Copyright 2022 © Brisbane Open House<br/>PO Box 8316 Woolloongabba Qld 410<span>
-			</div>
-		</div>	
+		<a href="/" class="footer-logo">
+			<img src="{{assets}}/images/header-logo.svg" alt="{{ site.name }}">
+		</a>
+
+		<div class="colophon">
+			Copyright {{ "now"|date("Y") }} © Brisbane Open House<br/>
+			PO Box 8316 Woolloongabba Qld 410
+		<div>
 	</div>
 </footer>
