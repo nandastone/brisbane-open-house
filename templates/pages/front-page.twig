@@ -16,7 +16,11 @@
 							<h2 class="sub-heading">{{ slide.sub_heading }}</h2>
 
 							{% if slide.call_to_action_label %}
-								<a href="{{ slide.call_to_action_url}}" class="btn btn-primary">
+								<a
+									href="{{ slide.call_to_action_url }}"
+									{% if slide.open_call_to_action_in_new_tab %}target="_blank"{% endif %}
+									class="btn btn-primary"
+								>
 									{{ slide.call_to_action_label }}
 								</a>
 							{% endif %}
