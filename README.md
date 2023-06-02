@@ -29,6 +29,10 @@ Refer to `assets/js/myBuildingsApp/README.md` for React app deployment steps.
 
 The Google Maps API key is configured under the Options screen.
 
+## Bootstrap
+
+Bootstrap 3 🤮
+
 ## Timber
 
 https://timber.github.io/docs/
