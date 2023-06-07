@@ -1,11 +1,19 @@
 .boh-bg-image {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
-  &.boh-bg-image-contain {
-	background-size: contain;
-  }
+	&.boh-bg-image-contain {
+		background-size: contain;
+	}
+}
+
+.color-primary {
+	color: $color-yellow !important;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
 }

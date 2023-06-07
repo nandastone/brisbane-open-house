@@ -201,6 +201,23 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_647fd79be8840",
+            "label": "Privacy Policy Link",
+            "name": "privacy_policy_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -221,5 +238,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685701533
+    "modified": 1686099897
 }
