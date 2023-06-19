@@ -33,9 +33,6 @@ class BOHAssetDependencies {
     }
 
     public function enqueue() {
-        // $this->register_styles();
-        // $this->enqueue_styles();
-
         $this->register_scripts();
         $this->enqueue_scripts();
     }

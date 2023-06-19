@@ -27,7 +27,9 @@ Refer to `assets/js/myBuildingsApp/README.md` for React app deployment steps.
 
 ### Google Maps
 
-The Google Maps API key is configured under the Options screen.
+Google Maps is embedded in `assets/js/app.js` using the `@googlemaps/js-api-loader` package.
+
+The Google Maps API key is configured under the Options screen. The public api key is exposed to the frontend (JS) via `wp_localize_script()`.
 
 ## Bootstrap
 

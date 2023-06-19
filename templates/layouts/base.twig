@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" type="image/png" href="{{assets}}/images/favicon.png" sizes="128x128" />
-		<link rel="icon" type="image/png" href="{{assets}}/images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="{{assets}}/images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="{{assets}}/images/favicon-16x16.png" sizes="16x16" />
 
         {% block styles %}
@@ -19,8 +19,6 @@
 
             {# {{ 'vendor.min.css' | css_tag }} #}
             {# {{ 'app.min.css' | css_tag }} #}
-
-			<script async src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&callback=initMap"></script>
         {% endblock %}
     </head>
     <body class="{{ body_class }}">
@@ -33,14 +31,15 @@
         {% endblock %}
 
         {% include 'partials/newsletter.twig' %}
-		{% block prefooter %}{% endblock %}
-		{% include 'partials/footer.twig' %}
-		{% include 'partials/modal.twig' %}
+        {% block prefooter %}{% endblock %}
+        {% include 'partials/footer.twig' %}
+        {% include 'partials/modal.twig' %}
 
         {% block javascripts %}
             {{ wp_footer }}
-           {{ 'openHouseGlobal' | js_global }}
-           {#  {{ 'app.min.js' | js_tag }} #}
+            {{ 'openHouseGlobal' | js_global }}
+            {#  {{ 'app.min.js' | js_tag }} #}
+
             <script type='text/javascript'>
                 (function (d, t) {
                     var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];

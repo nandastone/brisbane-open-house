@@ -1,4 +1,5 @@
 import "url-search-params-polyfill";
+import { Loader } from "@googlemaps/js-api-loader";
 
 (function ($) {
 	"use strict";
@@ -135,21 +136,7 @@ import "url-search-params-polyfill";
 								{
 									scrollTop: target.offset().top - headerOffset,
 								},
-								1000,
-								function () {
-									// Callback after animation
-									// Must change focus! (problems on IE)
-									/*
-									var $target = $(target);
-									$target.focus();
-									if ($target.is(":focus")) { // Checking if the target was focused
-										return false;
-									} else {
-										$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-										$target.focus(); // Set focus again
-									};
-									*/
-								}
+								1000
 							);
 						}
 					}
@@ -363,7 +350,6 @@ import "url-search-params-polyfill";
 					.find(".building-tiles");
 				var listitems = mylist.children(".building-tile").get();
 				listitems.sort(function (a, b) {
-					//return $(a).find('.building_id').text().toUpperCase().localeCompare($(b).find('.building_id').text().toUpperCase());
 					a = $(a).find(".building_id").text();
 					b = $(b).find(".building_id").text();
 					a = a.length < 3 ? "0" + a : a;
@@ -485,11 +471,19 @@ import "url-search-params-polyfill";
 
 		google_maps: function () {
 			var self = this;
-			window.initMap = () => {
+
+			const loader = new Loader({
+				apiKey: window.appSettings.GOOGLE_MAPS_API_KEY,
+				version: "weekly",
+			});
+
+			loader.load().then(async () => {
+				await google.maps.importLibrary("maps");
+
 				$(".map").each(function () {
 					self.map = self.new_map($(this));
 				});
-			};
+			});
 		},
 
 		new_map: function ($el) {
