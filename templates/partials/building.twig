@@ -31,7 +31,7 @@
 		<div class="section-wrapper">
 			<div class="row">
 				<div class="col-md-8 post-body-wrapper">
-					<div class="post-body showless">
+					<div class="post-body">
 						{{ post.content }}
 
 						<div class="how-to-book">
@@ -127,9 +127,8 @@
 							{% endif %}
 						</div>
 						{% endif %}
-
 					</div>
-					<div class="button-read-more" target-data="post-body"><button>Read More</button></div>
+
 					<div class="building-buttons">
 						{% if post.volunteer_for_this_building %}<div class="volunteer"><button><a href="{{ post.volunteer_for_this_building }}" target="_blank">Volunteer for this Building</a></button></div>{% endif %}
 						{#
